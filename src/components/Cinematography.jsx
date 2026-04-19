@@ -4,6 +4,8 @@ import Marquee from "./Cinematography/Marquee";
 import Search from "./Cinematography/Search";
 import Visual from "./Cinematography/Visual";
 import Work from "./Cinematography/Work";
+import Lens from "./Cinematography/Lens";
+import Industries from "./Cinematography/Industries";
 
 function Cinematography() {
   return (
@@ -13,6 +15,8 @@ function Cinematography() {
       <Search />
       <Visual />
       <Work />
+      <Lens />
+      <Industries />
     </>
   );
 }
