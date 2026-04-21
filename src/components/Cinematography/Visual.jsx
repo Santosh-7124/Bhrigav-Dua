@@ -175,7 +175,7 @@ function Visual() {
               </div>
             </article>
           </div>
-          <div className="home-brands-buttons">
+          <div className="home-brands-buttons desktop">
             <button
               className="home-brands-button"
               onClick={handlePrev}
