@@ -7,10 +7,15 @@ import Work from "./Producer/Work";
 import Holi from "./Producer/Holi";
 import Diwali from "./Producer/Diwali";
 import Art from "./Producer/Art";
+import Navbar from "./Producer/Navbar";
+import Footer from "./Producer/Footer";
+import Contact from "./Home/Contact";
+import Testimony from "./Cinematography/Testimony";
 
 function Producer() {
   return (
     <>
+      <Navbar />
       <Banner />
       <Marquee />
       <Search />
@@ -19,6 +24,9 @@ function Producer() {
       <Holi />
       <Diwali />
       <Art />
+      <Testimony />
+      <Contact />
+      <Footer />
     </>
   );
 }
