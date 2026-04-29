@@ -11,6 +11,9 @@ import Navbar from "./Producer/Navbar";
 import Footer from "./Producer/Footer";
 import Contact from "./Home/Contact";
 import Testimony from "./Cinematography/Testimony";
+import Vision from "./Producer/Vision";
+import Last from "./Producer/Last";
+import Inside from "./Producer/Inside";
 
 function Producer() {
   return (
@@ -24,7 +27,9 @@ function Producer() {
       <Holi />
       <Diwali />
       <Art />
-      <Testimony />
+      <Vision />
+      <Inside />
+      <Last />
       <Contact />
       <Footer />
     </>

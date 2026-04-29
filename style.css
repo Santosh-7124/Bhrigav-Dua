@@ -1781,7 +1781,7 @@ body {
 
 .cinematography-last {
   width: 100%;
-  min-height: 100svh;
+  height: 200svh;
 }
 
 .cinematography-snapshots {
@@ -1884,6 +1884,7 @@ body {
 
 .cinematography-testimony {
   width: 100%;
+  height: 100svh;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -2422,6 +2423,162 @@ body {
   letter-spacing: -0.48px;
 }
 
+.producer-vision {
+  width: 100%;
+  min-height: 100svh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.producer-vision-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.producer-vision-container h2 {
+  color: #000;
+  font-family: "Press Start 2P";
+  font-size: 80px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+  text-align: center;
+  z-index: 1;
+}
+
+.producer-vision-img {
+  width: 180px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  position: absolute;
+  transition: all 1s;
+}
+
+.producer-vision-img.producer-vision-img-visible {
+  opacity: 1;
+}
+
+.producer-vision-img.producer-vision-img-hidden {
+  opacity: 0;
+}
+
+.producer-vision-container .producer-vision-img:nth-of-type(1) {
+  top: -100px;
+  left: 50%;
+  transform: translateX(-50%) rotate(-3.911deg);
+}
+
+.producer-vision-container .producer-vision-img:nth-of-type(2) {
+  top: -50px;
+  left: 50%;
+  transform: translateX(calc(-50% + 110%)) rotate(4.516deg);
+}
+
+.producer-vision-container .producer-vision-img:nth-of-type(3) {
+  top: 80px;
+  left: 50%;
+  transform: translateX(calc(-50% + 200%)) rotate(13.817deg);
+}
+
+.producer-vision-container .producer-vision-img:nth-of-type(4) {
+  bottom: -120px;
+  left: 50%;
+  transform: translateX(calc(-50% + 100%)) rotate(-6.567deg);
+}
+
+.producer-vision-container .producer-vision-img:nth-of-type(5) {
+  bottom: -120px;
+  left: 50%;
+  transform: translateX(calc(-50%)) rotate(4.709deg);
+}
+
+.producer-vision-container .producer-vision-img:nth-of-type(6) {
+  bottom: -120px;
+  left: 50%;
+  transform: translateX(calc(-50% - 100%)) rotate(-0.887deg);
+}
+
+.producer-vision-container .producer-vision-img:nth-of-type(7) {
+  bottom: -80px;
+  left: 50%;
+  transform: translateX(calc(-50% - 200%)) rotate(7.696deg);
+}
+
+.producer-vision-container .producer-vision-img:nth-of-type(8) {
+  top: 0px;
+  left: 50%;
+  transform: translateX(calc(-50% - 180%)) rotate(-4.793deg);
+}
+
+.producer-vision-container .producer-vision-img:nth-of-type(9) {
+  top: -80px;
+  left: 50%;
+  transform: translateX(calc(-50% - 100%));
+}
+
+.producer-inside {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 8px;
+  padding: 100px 0px;
+}
+
+.producer-inside-wrapper {
+  width: 100%;
+  overflow: hidden;
+}
+
+.producer-inside-marquee {
+  display: flex;
+  align-items: center;
+  width: max-content;
+  animation: marqueeScroll 30s linear infinite reverse;
+}
+
+.producer-inside
+  .producer-inside-wrapper:nth-of-type(2)
+  .producer-inside-marquee {
+  animation: marqueeScroll 30s linear infinite;
+}
+
+.producer-inside-marquee img {
+  height: 160px;
+  object-fit: cover;
+  margin-left: 8px;
+}
+
+.producer-inside-heading {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  width: 300px;
+  height: 160px;
+  padding: 16px;
+  background: var(--color-black-Primary, #1b1b1b);
+  backdrop-filter: blur(2px);
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-family: "Plus Jakarta Sans";
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100%;
+  letter-spacing: -1.44px;
+  text-align: center;
+}
+
 /* Footer */
 
 footer {
@@ -2857,7 +3014,7 @@ footer {
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
-    line-height: 120%; 
+    line-height: 120%;
     letter-spacing: -0.28px;
   }
 
@@ -3401,6 +3558,61 @@ footer {
     font-weight: 400;
     line-height: 120%;
     letter-spacing: -0.32px;
+  }
+
+  .producer-vision.home-reality {
+    min-height: 100svh;
+  }
+
+  .producer-vision-container {
+    width: 100%;
+    height: 100%;
+  }
+
+  .producer-vision-container h2 {
+    color: var(--color-black-Primary, #1b1b1b);
+    text-align: center;
+    font-family: "Press Start 2P";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+    text-transform: uppercase;
+  }
+
+  .producer-vision-img {
+    width: 100px;
+    height: 120px;
+  }
+
+  .producer-inside-div {
+    min-height: 100svh;
+  }
+
+  .producer-inside.home-reality {
+    padding: 0;
+    gap: 8px;
+  }
+
+  .producer-inside-marquee img {
+    height: 116px;
+  }
+
+  .producer-inside-heading {
+    width: 200px;
+    height: 116px;
+    color: #fff;
+    text-align: center;
+    font-family: "Plus Jakarta Sans";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%; 
+    letter-spacing: -0.48px;
+  }
+
+  .cinematography-last {
+    height: 100svh;
   }
 
   /* Footer */
